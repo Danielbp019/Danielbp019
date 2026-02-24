@@ -83,7 +83,7 @@ function fetchRepos() {
     const percent = Math.round((count / totalCount) * 100); // porcentaje del total
 
     bars += `
-      <text x="40" y="${80 + i * 50}" fill="${theme.text}" font-size="18">
+      <text x="40" y="${80 + i * 50}" fill="${theme.text}" font-size="18" font-family="Roboto, sans-serif">
         ${lang}: ${percent}%
       </text>
       <rect x="40" y="${90 + i * 50}" width="400" height="20" fill="${theme.barBg}" rx="5"/>
