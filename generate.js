@@ -101,7 +101,7 @@ function fetchRepos() {
     stroke="white"
     stroke-width="2"
   />
-  <text x="40" y="50" fill="${theme.text}" font-size="24" font-weight="bold">
+  <text x="40" y="50" fill="${theme.text}" font-size="24" font-weight="bold" font-family="Roboto, sans-serif">
     Lenguajes más usados
   </text>
   ${bars}
