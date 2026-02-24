@@ -1,0 +1,51 @@
+
+<svg width="500" height="420" xmlns="http://www.w3.org/2000/svg">
+  <rect 
+    width="100%" 
+    height="100%" 
+    fill="#1a1b27" 
+    rx="15" 
+    stroke="white"
+    stroke-width="2"
+  />
+  <text x="40" y="50" fill="#c0caf5" font-size="24" font-weight="bold">
+    Lenguajes más usados
+  </text>
+  
+      <text x="40" y="80" fill="#c0caf5" font-size="18">
+        PHP: 40%
+      </text>
+      <rect x="40" y="90" width="400" height="20" fill="#24283b" rx="5"/>
+      <rect x="40" y="90" width="400" height="20" fill="#777bb4" rx="5"/>
+    
+      <text x="40" y="130" fill="#c0caf5" font-size="18">
+        Astro: 20%
+      </text>
+      <rect x="40" y="140" width="400" height="20" fill="#24283b" rx="5"/>
+      <rect x="40" y="140" width="200" height="20" fill="#7aa2f7" rx="5"/>
+    
+      <text x="40" y="180" fill="#c0caf5" font-size="18">
+        HTML: 13%
+      </text>
+      <rect x="40" y="190" width="400" height="20" fill="#24283b" rx="5"/>
+      <rect x="40" y="190" width="133.33333333333331" height="20" fill="#e34c26" rx="5"/>
+    
+      <text x="40" y="230" fill="#c0caf5" font-size="18">
+        JavaScript: 13%
+      </text>
+      <rect x="40" y="240" width="400" height="20" fill="#24283b" rx="5"/>
+      <rect x="40" y="240" width="133.33333333333331" height="20" fill="#f7df1e" rx="5"/>
+    
+      <text x="40" y="280" fill="#c0caf5" font-size="18">
+        CSS: 7%
+      </text>
+      <rect x="40" y="290" width="400" height="20" fill="#24283b" rx="5"/>
+      <rect x="40" y="290" width="66.66666666666666" height="20" fill="#264de4" rx="5"/>
+    
+      <text x="40" y="330" fill="#c0caf5" font-size="18">
+        Vue: 7%
+      </text>
+      <rect x="40" y="340" width="400" height="20" fill="#24283b" rx="5"/>
+      <rect x="40" y="340" width="66.66666666666666" height="20" fill="#42b883" rx="5"/>
+    
+</svg>
