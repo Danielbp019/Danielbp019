@@ -1,7 +1,8 @@
-import fs from "fs";
-import https from "https";
+const fs = require("fs");
+const https = require("https");
 
 const username = process.env.GITHUB_USERNAME || "Danielbp019";
+const token = process.env.GITHUB_TOKEN;
 
 // Colores estilo Tokyonight + colores comunes de lenguajes
 const theme = {
@@ -32,17 +33,27 @@ const languageColors = {
 };
 
 function fetchRepos() {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     https.get(
       {
         hostname: "api.github.com",
         path: `/users/${username}/repos?per_page=100`,
-        headers: { "User-Agent": "node" },
+        headers: {
+          "User-Agent": "node",
+          ...(token ? { Authorization: `token ${token}` } : {}),
+        },
       },
       (res) => {
         let data = "";
         res.on("data", (chunk) => (data += chunk));
-        res.on("end", () => resolve(JSON.parse(data)));
+        res.on("end", () => {
+          try {
+            resolve(JSON.parse(data));
+          } catch (err) {
+            reject(err);
+          }
+        });
+        res.on("error", reject);
       },
     );
   });
