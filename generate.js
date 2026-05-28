@@ -4,11 +4,11 @@ const https = require("https");
 const username = process.env.GITHUB_USERNAME || "Danielbp019";
 const token = process.env.GITHUB_TOKEN;
 
-// Colores estilo Tokyonight + colores comunes de lenguajes
+// Colores estilo midnight-purple + colores comunes de lenguajes
 const theme = {
-  background: "#1a1b27",
-  text: "#c0caf5",
-  barBg: "#24283b",
+  background: "#000000",
+  text: "#ffffff",
+  barBg: "#1a0033",
 };
 
 const languageColors = {

@@ -1,6 +1,6 @@
 # 💫 Acerca de mí:
 
-Desarrollador web full-stack, me encantan los proyectos con propósito. Tengo experiencia en diversas tecnologías y frameworks.
+Desarrollador web full-stack con preferencia por el back-end. Me gustan los proyectos con propósito y con un flujo de navegación cuidado.
 
 # 💻 Stack Tecnológico:
 
@@ -8,8 +8,7 @@ Desarrollador web full-stack, me encantan los proyectos con propósito. Tengo ex
 
 # 📊 GitHub Stats:
 
-![](https://nirzak-streak-stats.vercel.app/?user=Danielbp019&theme=tokyonight&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Danielbp019&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
+![](https://github-readme-stats.shion.dev/api/top-langs/?username=Danielbp019&theme=midnight-purple&hide_border=false&include_all_commits=true&count_private=true&layout=compact)<br/>
 
 # Generado por ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-blue?logo=githubactions&logoColor=white) :
 
