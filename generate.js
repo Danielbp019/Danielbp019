@@ -13,23 +13,25 @@ const theme = {
 
 const languageColors = {
   // Frontend
-  JavaScript: "#f7df1e",
-  TypeScript: "#3178c6",
+  CSS: "#663399",
   HTML: "#e34c26",
-  CSS: "#264de4",
-  Vue: "#42b883",
+  JavaScript: "#f1e05a",
+  TypeScript: "#3178c6",
+  Vue: "#41b883",
 
-  // Backend web
-  PHP: "#777bb4",
-  Python: "#3572A5",
-  Ruby: "#cc342d",
+  // Backend
   Go: "#00ADD8",
+  PHP: "#4F5D95",
+  Python: "#3572A5",
+  Ruby: "#701516",
   Rust: "#dea584",
 
-  // Infra común web
-  SQL: "#e38c00",
-  Shell: "#89e051",
+  // Infra
+  Batchfile: "#C1F12E",
   Dockerfile: "#384d54",
+  PowerShell: "#012456",
+  Shell: "#89e051",
+  SQL: "#e38c00",
 };
 
 function fetchRepos() {
@@ -78,21 +80,21 @@ function fetchRepos() {
 
   let bars = "";
   sorted.forEach(([lang, count], i) => {
-    const width = (count / max) * 400;
-    const color = languageColors[lang] || "#7aa2f7";
+    const width = (count / max) * 300;
+    const color = languageColors[lang] || "#7dcfff";
     const percent = Math.round((count / totalCount) * 100); // porcentaje del total
 
     bars += `
       <text x="40" y="${80 + i * 50}" fill="${theme.text}" font-size="18" font-family="Roboto, sans-serif">
         ${lang}: ${percent}%
       </text>
-      <rect x="40" y="${90 + i * 50}" width="400" height="20" fill="${theme.barBg}" rx="5"/>
+      <rect x="40" y="${90 + i * 50}" width="300" height="20" fill="${theme.barBg}" rx="5"/>
       <rect x="40" y="${90 + i * 50}" width="${width}" height="20" fill="${color}" rx="5"/>
     `;
   });
 
   const svg = `
-<svg width="500" height="${sorted.length * 50 + 120}" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="${sorted.length * 50 + 120}" xmlns="http://www.w3.org/2000/svg">
   <rect 
     width="100%" 
     height="100%" 
